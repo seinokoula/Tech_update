@@ -17,13 +17,9 @@ html{
 }
 
 
-.body{
-    /* background-image: url('first_background.jpg');  */
-    /*background-repeat: no-repeat; 
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed; */ 
-}
+/* .body{
+   
+} */
 
 .titre{
     position: absolute;
@@ -32,7 +28,7 @@ html{
     transform:translate(-50%,-50%);
     font-size: 8em;
     font-family: sans-serif;
-    background: linear-gradient(to right, red, yellow, #2196f3, #ff00eb);
+    background: linear-gradient(to right, rgb(255, 153, 0), rgb(233, 174, 98),  rgb(231, 203, 166), #ffffff);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     text-shadow: 0 0 2px rgba(0, 0, 0, .5);
@@ -73,7 +69,6 @@ html{
 .clock .min,
 .clock .sec {
     position: absolute;
-  
 }
 
 .clock .hour, .hr {
@@ -126,4 +121,12 @@ html{
     background: #e5e5e5;
     z-index: 11;
     border-radius: 6px 6px 0 0;
+}
+
+
+.image2{
+  
+    background-image: url(images/la_2.jpg);
+  
+
 }
