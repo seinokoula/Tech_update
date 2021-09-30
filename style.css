@@ -9,7 +9,7 @@
 
 html{
     scroll-behavior: smooth;
-    background-image: url(first_background.jpg);
+    background-image: url(images/first_background.jpg);
     background-repeat: no-repeat; 
     background-position: center;
     background-size: cover;
@@ -39,3 +39,6 @@ html{
     text-shadow: 0 0 2px rgba(0, 0, 0, .5);
     font-family: 'Bebas Neue', cursive;
 }
+
+
+
