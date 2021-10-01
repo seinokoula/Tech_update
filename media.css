@@ -1,0 +1,23 @@
+@media screen and (max-width: 640px) {
+    .bloc {
+        display:block;
+        clear:both;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .bloc {
+        display:block;
+        clear:both;
+    }
+}
+
+@media print {
+    #menu, #footer, aside {
+        display:none;
+    }
+    body {
+        font-size:120%;
+        color:black;
+    }
+}
