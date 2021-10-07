@@ -42,7 +42,7 @@ body{
 .clock-container{
   width: 350px;
   height: 350PX;
-  margin:2% 2%;
+  margin:14% 13%;
 }
 
 
@@ -166,7 +166,7 @@ body{
     flex-wrap: nowrap;
     align-content: stretch;
     top: 17.5vh;
-    right: 100px;
+    right: 175px;
   }
   
   .card:hover {
