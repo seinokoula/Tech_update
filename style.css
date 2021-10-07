@@ -15,11 +15,14 @@ html{
     background-size: cover;
     background-attachment: fixed; 
 }
+body{ 
+    display: flex;
+    
+    font-family: cursive;
+  }
+  
+  
 
-
-/* .body{
-   
-} */
 
 .titre{
     position: absolute;
@@ -36,6 +39,12 @@ html{
 }
 
 
+.clock-container{
+  width: 350px;
+  height: 350PX;
+  margin:2% 2%;
+}
+
 
 .clock {
     display: flex;
@@ -43,9 +52,8 @@ html{
     height: 350px;
     justify-content: center;
     align-items: center;
-    margin:2% 2%;
     background: url(http://samuel-garcia.site/img/clock-sam.png);
-    background-size: cover;
+    background-size: 350px;
     border: 4px solid #191919;
     border-radius: 50%;
     box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
@@ -139,29 +147,26 @@ html{
   }
   
   
-  body {
-    min-height: 100vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    font-family: cursive;
-  }
-  
-  
   .card {
     background: #191c29;
     width: var(--card-width);
     height: var(--card-height);
     padding: 3px;
-    position: relative;
+    position: absolute;
     border-radius: 6px;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: baseline;
     text-align: center;
     display: flex;
     font-size: 1.5em;
+    bottom: 50%;
     color: rgb(88 199 250 / 0%);
     cursor: pointer;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    top: 17.5vh;
+    right: 100px;
   }
   
   .card:hover {
@@ -194,7 +199,7 @@ html{
     content: "";
     top: calc(var(--card-height) / 6);
     left: 0;
-    right: 0;
+    right: 0; 
     z-index: -1;
     height: 100%;
     width: 100%;
