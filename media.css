@@ -43,9 +43,9 @@
 
       .hover-me{
         position: absolute;
-        top: 95%;
-        display:flex;
-        left: 1%;
+        top: 105%;
+        right: 3%;
+        left: -20%;
         width: 500px;
         text-align: center;
         color: white;
