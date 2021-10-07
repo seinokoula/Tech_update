@@ -5,11 +5,87 @@
     }
 }
 
-@media screen and (min-width: 200px) and (max-width: 640px) {
+@media screen and (min-width: 200px) and (max-width: 1024px) {
     .bloc {
         display:block;
         clear:both;
     }
+
+    .clock-container{
+        width: 150px;
+        height: 150PX;
+        margin:7% 13%;
+      }
+
+
+    .titre{
+        display: flex;
+        width: 100px;
+        margin:40% -20%;
+        transform:translate(-50%,-50%);
+        font-size: 8em;
+        font-family: sans-serif;
+        background: linear-gradient(to right,#5ddcff, #3c67e3 43%, #4e00c2);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+        font-family: 'Bebas Neue', cursive;
+        }
+
+      .clock {
+          display: flex;
+          width: 350px;
+          height: 350px;
+          justify-content: center;
+          align-items: center;
+       
+      }
+
+      .hover-me{
+        position: absolute;
+        top: 95%;
+        display:flex;
+        left: 1%;
+        width: 500px;
+        text-align: center;
+        color: white;
+        font-size: 2.5em;
+        pointer-events: none;
+      }
+    
+      .card:hover+p{
+        display: none;
+      } 
+        
+        .card {
+          background: #191c29;
+          width: var(--card-width);
+          height: var(--card-height);
+          padding: 3px;
+          position: absolute;
+          border-radius: 6px;
+          justify-content: flex-start;
+          align-items: baseline;
+          text-align: center;
+          display: flex;
+          font-size: 1.5em;
+          bottom: 50%;
+          color: rgb(88 199 250 / 0%);
+          cursor: pointer;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-content: stretch;
+          top: 17.5vh;
+          right: 175px;
+          margin:150% -30%;
+        }
+
+        :root {
+            --card-height: 45vh;
+            --card-width: calc(var(--card-height) / 1.5);
+          }
+      
+      
 }
 
 @media print {

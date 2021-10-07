@@ -17,7 +17,7 @@ html{
 }
 body{ 
     display: flex;
-    
+    overflow: hidden;
     font-family: cursive;
   }
   
@@ -42,7 +42,7 @@ body{
 .clock-container{
   width: 350px;
   height: 350PX;
-  margin:14% 13%;
+  margin:14% 3%;
 }
 
 
@@ -131,11 +131,7 @@ body{
     border-radius: 6px 6px 0 0;
 }
 
-
-
-
-
-@property --rotate {
+@property --rotate {  
     syntax: "<angle>";
     initial-value: 132deg;
     inherits: false;
@@ -146,7 +142,21 @@ body{
     --card-width: calc(var(--card-height) / 1.5);
   }
   
-  
+  .hover-me{
+    position: absolute;
+    top: 47%;
+    right: 3%;
+    width: 500px;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    pointer-events: none;
+  }
+
+  .card:hover+p{
+    display: none;
+  } 
+
   .card {
     background: #191c29;
     width: var(--card-width);
@@ -166,9 +176,23 @@ body{
     flex-wrap: nowrap;
     align-content: stretch;
     top: 17.5vh;
-    right: 175px;
+    right: 75px;
   }
+
+  .card pre{
+    width: 100%;
+    height: 100%;
+    margin-left: 100px;
+    opacity: 0;
+    
+    
+  }
+
+  .card :hover {
   
+    opacity:100;
+  }
+
   .card:hover {
     color: rgb(88 199 250 / 100%);
     transition: color 1s;
