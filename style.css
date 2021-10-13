@@ -144,8 +144,8 @@ body{
   
   .hover-me{
     position: absolute;
-    top: 47%;
-    right: 3%;
+    top: 25vw;
+    right: 0vw;
     width: 500px;
     text-align: center;
     color: white;
