@@ -245,3 +245,10 @@ body{
   }
   
 
+  footer{
+    color: grey;
+    font-size: 18px;
+    position: absolute;
+    margin: 10px;
+  }
+
