@@ -17,7 +17,7 @@ html{
 }
 body{ 
     display: flex;
-    overflow: hidden;
+
     font-family: cursive;
   }
   
@@ -144,8 +144,8 @@ body{
   
   .hover-me{
     position: absolute;
-    top: 25vw;
-    right: 0vw;
+    top: 350px;
+    right: 7px;
     width: 500px;
     text-align: center;
     color: white;
