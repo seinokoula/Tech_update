@@ -17,12 +17,9 @@ html{
 }
 body{ 
     display: flex;
-
+    overflow-x: hidden;
     font-family: cursive;
   }
-  
-  
-
 
 .titre{
     position: absolute;
